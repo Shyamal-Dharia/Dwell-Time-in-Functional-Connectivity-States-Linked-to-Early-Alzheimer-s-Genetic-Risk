@@ -1,2 +1,3 @@
-# fMRI-PEARL
+# PEARL-fMRI
+
 Project-1
