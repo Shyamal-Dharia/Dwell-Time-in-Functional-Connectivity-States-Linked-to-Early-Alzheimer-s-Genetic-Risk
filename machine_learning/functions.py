@@ -14,14 +14,6 @@ from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 class FMRI_MRIDataset(Dataset):
 
     def __init__(self, root_dir, transform=None, binary_classes=None):
-        """
-        Args:
-            root_dir (str): Path to the root folder containing subject directories 
-                            (e.g., derivatives_selected).
-            transform (callable, optional): Optional transform to be applied on a sample.
-            binary_classes (list or tuple, optional): Two class labels to include for binary classification.
-                If provided, only subjects with labels in this list are used and their labels are remapped.
-        """
         self.root_dir = root_dir
         self.transform = transform
         self.binary_classes = binary_classes
